@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        if(a.charAt(0)>='A'&&a.charAt(0)<='Z'||a.charAt(0)>='a'&&a.charAt(0)<='z')
+        {
+            if(a.equals("a") || a.equals("e") || a.equals("i") || a.equals("o") || a.equals("u")||a.equals("A")                     || a.equals("E") || a.equals("I") || a.equals("O") || a.equals("U")){
+            System.out.println("The Character " +a+" is Vowel");
+         }
+            else
+            {
+                System.out.println("The Character " +a+" is Consonant");
+            }
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
